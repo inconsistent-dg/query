@@ -22,7 +22,7 @@ window.configure(fg_color='#000')
 
 ## font
 unmef = ctk.CTkFont(family="undefined medium", size=20)  # normal size
-unmef_small = ctk.CTkFont(family="undefined medium", size=15)  # small size
+unmef_small = ctk.CTkFont(family="undefined medium", size=16)  # small size
 unmef_large = ctk.CTkFont(family="undefined medium", size=100)  # big label
 
 ## widgets
@@ -47,7 +47,7 @@ sequence_entry = ctk.CTkEntry(window)
 sequence_entry.pack(pady=5)
 
 # calculate button
-calculate_button = ctk.CTkButton(window, text="Calculate", command=lambda: calculate_output(
+calculate_button = ctk.CTkButton(window, text="Calculate", font=unmef_small, command=lambda: calculate_output(
     sequence_entry.get()))
 calculate_button.pack(pady=5)
 
